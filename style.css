@@ -83,3 +83,9 @@ footer {
     padding: 20px 10px;
   }
 }
+.hero img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+}
