@@ -89,3 +89,35 @@ footer {
   object-fit: cover;
   display: block;
 }
+ul li {
+  transition: transform 0.2s ease;
+}
+ul li:hover {
+  transform: scale(1.03);
+}
+button:hover {
+  background-color: #d62828;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+input, textarea, button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+button {
+  background: #b22222;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background: #ff6347;
+}
