@@ -1,97 +1,70 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ali's Kebab Hus</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kebab Hus</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="kebab-icon.png" />
 </head>
+
 <body>
   <header>
-    <section class="hero">
-  <img src="kebab-banner.jpg" alt="Lækkert kebabmåltid">
-</section>
-    <h1>Ali's Kebab Hus</h1>
+    <h1>Kebab Hus</h1>
     <nav>
+      <a href="#about">Om os</a>
       <a href="#menu">Menu</a>
-      <a href="#om">Om os</a>
-      <a href="#kontakt">Kontakt</a>
+      <a href="#hours">Åbningstider</a>
+      <a href="#contact">Kontakt</a>
     </nav>
   </header>
 
+  <section class="hero">
+    <img src="kebab-banner.jpg" alt="Lækkert kebabmåltid">
+    <div class="hero-text">
+      <h2>Frisklavet kebab – hver dag!</h2>
+      <p>Smag den bedste shawarma i byen, direkte fra grillen.</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>Om os</h2>
+    <p>Hos Kebab Hus bruger vi kun friske råvarer og autentiske opskrifter. Vores mission er at give dig den bedste smagsoplevelse – uanset om du spiser i restauranten eller tager maden med hjem.</p>
+  </section>
+
   <section id="menu">
-    <h2>Vores Menu</h2>
+    <h2>Menu</h2>
     <ul>
-      <li>Kebab rulle – 60 kr.</li>
-      <li>Durum – 65 kr.</li>
-      <li>Pizza kebab – 75 kr.</li>
-      <li>Falafel tallerken – 70 kr.</li>
-      <li> vandmelon og kool aid bundle. - 67kr.<li>
+      <li>Kebab i pitabrød – 55 kr</li>
+      <li>Shawarma tallerken – 85 kr</li>
+      <li>Durum – 60 kr</li>
+      <li>Pizza Margherita – 70 kr</li>
+      <li>Falafel tallerken – 65 kr</li>
     </ul>
   </section>
 
-  <section id="om">
-    <h2>Om os</h2>
-    <p>Hos Ali's Kebab Hus laver vi frisklavet kebab, pizza og falafel hver dag. 
-    Vi bruger kun friske råvarer og laver alt med kærlighed til smagen.</p>
+  <section id="hours">
+    <h2>Åbningstider</h2>
+    <p>Mandag – Søndag: 11:00 – 23:00</p>
   </section>
 
-  <section id="kontakt">
-    <h2>Kontakt</h2>
-    <p>📍 Adresse: Nørregade 25, København</p>
-<p>📞 <a href="tel:12345678">Ring: 12 34 56 78</a></p>
-<p>📸 <a href="https://instagram.com/" target="_blank">Følg os på Instagram</a></p>
-  </section>
-  <iframe
-  src="https://www.google.com/maps?q=Nørregade%2025,%20København&output=embed"
-  width="100%"
-  height="250"
-  style="border:0;"
-  allowfullscreen=""
-  loading="lazy">
-</iframe>
+  <section id="contact">
+    <h2>Kontakt os</h2>
+    <form>
+      <input type="text" placeholder="Dit navn" required />
+      <input type="email" placeholder="Din e-mail" required />
+      <textarea placeholder="Din besked"></textarea>
+      <button type="submit">Send</button>
+    </form>
 
+    <div class="map">
+      <iframe src="https://www.google.com/maps?q=Nørregade%2025,%20København&output=embed"
+              width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Ali's Kebab Hus</p>
+    <p>© 2025 Kebab Hus | Lavet af <a href="https://github.com/DIT-BRUGERNAVN" target="_blank">DIT NAVN</a></p>
   </footer>
 </body>
-
 </html>
-
-
-<section id="about">
-  <h2>Om os</h2>
-  <p>Vi laver frisklavet kebab, shawarma og pizza – altid med gode råvarer og et smil. Vores mål er at give dig den bedste smag i byen!</p>
-</section>
-
-<section id="menu">
-  <h2>Menu</h2>
-  <ul>
-    <li>Kebab i pitabrød – 55 kr</li>
-    <li>Shawarma tallerken – 85 kr</li>
-    <li>Durum – 60 kr</li>
-    <li>Pizza Margherita – 70 kr</li>
-  </ul>
-</section>
-
-<section id="hours">
-  <h2>Åbningstider</h2>
-  <p>Mandag - Søndag: 11:00 - 23:00</p>
-</section>
-
-<link rel="icon" type="image/png" href="kebab-icon.png">
-<section id="contact">
-  <h2>Kontakt os</h2>
-  <form>
-    <input type="text" placeholder="Dit navn" required>
-    <input type="email" placeholder="Din e-mail" required>
-    <textarea placeholder="Din besked"></textarea>
-    <button type="submit">Send</button>
-  </form>
-</section>
-
-<footer>
-  <p>© 2025 Kebab Hus | Lavet af <a href="https://github.com/yourusername" target="_blank">DIT NAVN</a></p>
-</footer>
-
