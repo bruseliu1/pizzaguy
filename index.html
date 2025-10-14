@@ -7,11 +7,18 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="kebab-icon.png" />
 </head>
-
+<script>
+const toggle = document.getElementById('darkModeToggle');
+toggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark');
+  toggle.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+});
+</script>
 <body>
   <header>
     <h1>Kebab Hus</h1>
     <nav>
+      <button id="darkModeToggle">🌙</button>
       <a href="#about">Om os</a>
       <a href="#menu">Menu</a>
       <a href="#hours">Åbningstider</a>
@@ -69,4 +76,5 @@
   </footer>
 </body>
 </html>
+
 
