@@ -7,23 +7,18 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="kebab-icon.png" />
 </head>
-<script>
-const toggle = document.getElementById('darkModeToggle');
-toggle.addEventListener('click', () => {
-  document.body.classList.toggle('dark');
-  toggle.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
-});
-</script>
+
 <body>
   <header>
     <h1>Kebab Hus</h1>
     <nav>
-      <button id="darkModeToggle">🌙</button>
       <a href="#about">Om os</a>
       <a href="#menu">Menu</a>
+      <a href="#reviews">Anmeldelser</a>
       <a href="#hours">Åbningstider</a>
       <a href="#contact">Kontakt</a>
     </nav>
+    <button id="darkModeToggle">🌙</button>
   </header>
 
   <section class="hero">
@@ -47,8 +42,19 @@ toggle.addEventListener('click', () => {
       <li>Durum – 60 kr</li>
       <li>Pizza Margherita – 70 kr</li>
       <li>Falafel tallerken – 65 kr</li>
-      <li>fried chicken og vandmelon bundle - 67 kr <li>
     </ul>
+  </section>
+
+  <section id="reviews">
+    <h2>Kundeanmeldelser</h2>
+    <div class="review">
+      <p>“Den bedste kebab i København! Kommer her hver uge.”</p>
+      <span>– Ali, lokal kunde</span>
+    </div>
+    <div class="review">
+      <p>“Super hurtig service og altid frisk mad.”</p>
+      <span>– Maria</span>
+    </div>
   </section>
 
   <section id="hours">
@@ -72,9 +78,31 @@ toggle.addEventListener('click', () => {
   </section>
 
   <footer>
-    <p>© 2025 Kebab Hus | Lavet af <a href="https://github.com/DIT-BRUGERNAVN" target="_blank">The GOAT</a></p>
+    <p>© 2025 Kebab Hus | Lavet af <a href="https://github.com/DIT-BRUGERNAVN" target="_blank">DIT NAVN</a></p>
   </footer>
+
+  <button id="topBtn">↑</button>
+
+  <!-- JavaScript -->
+  <script>
+  // Dark mode toggle
+  const toggle = document.getElementById('darkModeToggle');
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    toggle.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+  });
+
+  // Scroll to top button
+  const topBtn = document.getElementById('topBtn');
+  window.addEventListener('scroll', () => {
+    topBtn.style.display = window.scrollY > 400 ? 'block' : 'none';
+  });
+  topBtn.addEventListener('click', () => {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  });
+  </script>
 </body>
 </html>
+
 
 
